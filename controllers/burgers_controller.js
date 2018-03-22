@@ -27,10 +27,11 @@ app.post("/api/burgers", function(req, res) {
 
 app.put("/api/burgers/:id", function(req, res) {
 
-  db.Burger.update(req.body.devoured,
-   {
+  db.Burger.update({
+    devoured: req.body.devoured
+  }, {
     where: {
-      id: req.body.id,
+      id: req.params.id
     }
 }).then(function(dbBurger) {
   res.json(dbBurger);
@@ -38,4 +39,4 @@ app.put("/api/burgers/:id", function(req, res) {
 });
 
 
-}
+};
