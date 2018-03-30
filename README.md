@@ -1,6 +1,6 @@
 # Sequelized_Burger
 
-:hamburger:
+:hamburger: Eat The Burger!
 
 This is the same project as Eat The Burger, however, this version is sequelized. 
 
